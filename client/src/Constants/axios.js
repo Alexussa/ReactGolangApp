@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 export const config = {
-    port: 8000,
+    port: 3030,
     hostname: 'localhost'
 }
 

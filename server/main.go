@@ -1,9 +1,9 @@
 package main
 
 import (
-    "log"
-    "net/http"
-    "encoding/json"
+	"encoding/json"
+	"log"
+	"net/http"
 )
 
 func main() {
@@ -24,7 +24,7 @@ func main() {
 
     http.HandleFunc("/", helloHandler)
 
-    log.Println("Listing for requests at http://localhost:8000/hello")
+    log.Println("Listing for requests at http://localhost:3030/hello")
 
-    log.Fatal(http.ListenAndServe(":8000", nil))
+    log.Fatal(http.ListenAndServe(":3030", nil))
 }
